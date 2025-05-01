@@ -19,6 +19,7 @@ The code in this repository is designed to take in medical image formats and exp
 
 - The .vts format requires that the coordinate data be stored explicitly. This is inefficient and kind of annoying -- the NRRD format, for example, just requires spacing and directional data since it is restricted to raster data (**N**early **R**aw **R**aster **D**ata).
 - Data that does not exist in the standard basis / coordinate system $(\hat{e}_x, \hat{e}_y, \hat{e}_z)$ can be quite annoying in ParaView. I may look into a way to automate the rotation of data such that it exists in the standard basis. This would allow for storage in the .vti data type (which is substantially more efficient) and easier post-processing in ParaView.
+- NEW CON (May 1, 2025) Volume rendering a VTS is a truly terrible experience... another reason to figure out .vti eventually
 
 ## Medical Image Types Implemented / to be Implemented
 
